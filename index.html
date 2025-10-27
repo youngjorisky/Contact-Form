@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="contact.css">
+
+  <title>Frontend Mentor | Contact form</title>
+</head>
+
+<body>
+  <form>
+
+    <h1>Contact Us</h1>
+
+    <div>
+      <div class="input-class">
+        <label class="headings">First Name<span> *</span></label>
+        <input />
+        <!-- <p>This field is required</p> -->
+      </div>
+
+      <div  class="input-class">
+        <label class="headings">Last Name<span> *</span></label>
+        <input />
+        <!-- <p>This field is required</p> -->
+      </div>
+    </div>
+
+    <div class="input-class">
+      <label class="headings">Email Address<span> *</span></label>
+      <input />
+      <!-- <p>Please enter a valid email address</p>
+      <p>This field is required</p> -->
+    </div>
+
+    <div class="radio-group">
+      <label class="headings">Query Type<span> *</span></label>
+      <div>
+        <div class="group-1">
+          <label class="selections">
+            <input type="radio" name="type" value="general-enquiry" />
+            <span>General Enquiry</span>
+          </label>
+        </div>
+
+        <div class="group-2">
+          <label class="selections">
+            <input type="radio" name="type" value="support-request" />
+            <span>Support Request</span>
+          </label>
+        </div>
+      </div>
+      <!-- <p> Please select a query type</p> -->
+    </div>
+
+    <div div class="input-class">
+      <label class="headings">Message<span> *</span></label>
+      <textarea class="message"></textarea>
+      <!-- <p> This field is required</p> -->
+    </div>
+
+    <label>
+      <input type="checkbox" />
+      I consent to being contacted by the team
+      <span>*</span>
+    </label>
+
+    <button>Submit</button>
+  </form>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>

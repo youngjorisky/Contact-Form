@@ -1,0 +1,128 @@
+ .attribution {
+     font-size: 11px;
+     text-align: center;
+ }
+
+ .attribution a {
+     color: hsl(228, 45%, 44%);
+ }
+
+ html {
+     box-sizing: border-box;
+ }
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ @font-face {
+     font-family: 'Karla';
+     src: url('./assets/fonts/Karla-VariableFont_wght.ttf');
+     font-style: normal;
+     font-weight: 100 700;
+ }
+
+ body {
+     display: flex;
+     flex-direction: column;
+     gap: 40px;
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+     font-family: 'Karla', sans-serif;
+     background-color: hsl(148, 38%, 91%);
+ }
+
+ form {
+     display: grid;
+     gap: 20px;
+     min-width: 300px;
+     background-color: hsl(0, 0%, 100%);
+     padding: 2rem;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+ form>div {
+     display: grid;
+     gap: 20px;
+ }
+
+ .input-class {
+     display: flex;
+     flex-direction: column;
+     gap: 6px;
+ }
+
+ .radio-group {
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+ }
+
+ .radio-group>div {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 20px;
+ }
+
+ .selections {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     padding: 12px;
+     border: 1px solid hsl(200, 20%, 70%);
+     border-radius: 6px;
+     cursor: pointer;
+     transition: border-color 0.3s, background 0.3s;
+ }
+
+ .selections input[type="radio"] {
+     accent-color: hsl(169, 82%, 27%);
+     width: 15px;
+     height: 15px;
+ }
+
+ .selections:hover {
+     border-color: hsl(169, 82%, 27%);
+     background: hsl(148, 38%, 91%);
+ }
+
+ .input-class textarea,
+ .input-class input {
+     padding: 12px;
+     border: 1px solid hsl(200, 20%, 70%);
+     border-radius: 5px;
+     font-size: 16px;
+ }
+
+.headings{
+    font-size: 13px;
+}
+.headings span{
+    color: hsl(169, 82%, 27%);
+}
+.message{
+    height: 250px;
+    resize: none;
+}
+
+ button {
+     padding: 12px;
+     background-color: hsl(169, 82%, 27%);
+     border: none;
+     border-radius: 6px;
+     color: hsl(0, 0%, 100%);
+     font-weight: 700;
+     cursor: pointer;
+     transition: transform 0.2s ease, background-color 0.2s ease;
+ }
+
+ button:hover {
+    transform: scale(1.05);
+    background-color: hsl(169, 82%, 27%, 0.7);
+ }
+
+ 
