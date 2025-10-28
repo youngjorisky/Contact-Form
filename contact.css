@@ -90,24 +90,36 @@
      background: hsl(148, 38%, 91%);
  }
 
+ .selections:has(input[type="radio"]:checked) {
+     background-color: hsl(148, 38%, 91%);
+ }
+
  .input-class textarea,
  .input-class input {
      padding: 12px;
      border: 1px solid hsl(200, 20%, 70%);
      border-radius: 5px;
-     font-size: 16px;
+     font-size: 20px;
+     font-weight: 500;
  }
 
-.headings{
-    font-size: 13px;
-}
-.headings span{
-    color: hsl(169, 82%, 27%);
-}
-.message{
-    height: 250px;
-    resize: none;
-}
+ .headings {
+     font-size: 13px;
+ }
+
+ .headings span {
+     color: hsl(169, 82%, 27%);
+ }
+
+ .message {
+     height: 250px;
+     resize: none;
+     margin-top: 5px;
+ }
+
+ input[type="checkbox"]:checked {
+     accent-color: hsl(169, 82%, 27%);
+ }
 
  button {
      padding: 12px;
@@ -121,8 +133,24 @@
  }
 
  button:hover {
-    transform: scale(1.05);
-    background-color: hsl(169, 82%, 27%, 0.7);
+     transform: scale(1.05);
+     background-color: hsl(169, 82%, 27%, 0.7);
  }
 
- 
+ @media (min-width: 1000px) {
+    body{
+        height: 100vh;
+    }
+     form {
+         min-width: 700px;
+     }
+
+     .names,
+     .radio-group>div {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+     .message{
+        height: 150px;
+     }
+ }
