@@ -33,6 +33,7 @@
      justify-content: center;
      font-family: 'Karla', sans-serif;
      background-color: hsl(148, 38%, 91%);
+     font-weight: 500;
  }
 
  form {
@@ -137,10 +138,50 @@
      background-color: hsl(169, 82%, 27%, 0.7);
  }
 
+ .success-box {
+     display: none;
+     background: hsl(169, 82%, 27%);
+     color: white;
+     padding: 1.5rem;
+     border-radius: 10px;
+     text-align: center;
+     width: min(90%, 500px);
+     gap: 10px;
+ }
+
+ .success-box.active {
+     display: grid;
+     animation: fadeIn 0.4s ease forwards;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: scale(0.9);
+     }
+
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }
+
+ .error {
+     color: hsl(0, 66%, 54%);
+     font-size: 13px;
+     margin-top: 4px;
+ }
+
+ input.error-border,
+ textarea.error-border {
+     border: 2px solid hsl(0, 66%, 54%);
+ }
+
  @media (min-width: 1000px) {
-    body{
-        height: 100vh;
-    }
+     body {
+         height: 100vh;
+     }
+
      form {
          min-width: 700px;
      }
@@ -150,7 +191,8 @@
          display: grid;
          grid-template-columns: 1fr 1fr;
      }
-     .message{
-        height: 150px;
+
+     .message {
+         height: 150px;
      }
  }

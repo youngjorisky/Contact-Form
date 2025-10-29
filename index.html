@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <form>
+  <form id="form">
 
     <h1>Contact Us</h1>
 
@@ -21,21 +21,17 @@
       <div class="input-class">
         <label class="headings">First Name<span> *</span></label>
         <input />
-        <!-- <p>This field is required</p> -->
       </div>
 
       <div class="input-class">
         <label class="headings">Last Name<span> *</span></label>
         <input />
-        <!-- <p>This field is required</p> -->
       </div>
     </div>
 
     <div class="input-class">
       <label class="headings">Email Address<span> *</span></label>
       <input />
-      <!-- <p>Please enter a valid email address</p>
-      <p>This field is required</p> -->
     </div>
 
     <div class="radio-group">
@@ -51,24 +47,32 @@
           <span>Support Request</span>
         </label>
       </div>
-
-      <!-- <p> Please select a query type</p> -->
     </div>
 
-    <div div class="input-class">
+    <div class="input-class">
       <label class="headings">Message<span> *</span></label>
       <textarea class="message"></textarea>
-      <!-- <p> This field is required</p> -->
     </div>
 
-    <label>
-      <input type="checkbox" />
-      I consent to being contacted by the team
-      <span>*</span>
-    </label>
+    <div class="checkbox-wrapper">
+      <label>
+        <input type="checkbox" />
+        I consent to being contacted by the team
+        <span>*</span>
+      </label>
+    </div>
 
     <button>Submit</button>
   </form>
+
+  <div id="success-box" class="success-box">
+    <div>
+      <img src="./assets/images/icon-success-check.svg">
+      <h4>Message Sent!</h4>
+    </div>
+    Thanks for completing the form. We'll be in touch soon!
+  </div>
+
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
